@@ -7,4 +7,60 @@
 6 animare le altre 2 parole
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
+body {
+    font-family: 'Bree Serif', serif;
+    background-color: #f4f4f4;
+}
 
+#testoAlternato{
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 40px;
+    margin: 10px;
+}
+#testoAlternato p {
+    font-size: 24px;
+    line-height: 1.3;
+    margin: 0;
+}
+.parole{
+    position: relative;
+    text-align: left;
+    width:190px;
+    display:inline-block;
+
+}
+.uno{
+    animation: fade-in 9s infinite;
+    animation-fill-mode: both;
+}
+.due{
+    position: absolute;
+    left: 0;
+    animation: fade-in 9s infinite;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+    
+}
+.tre{
+    position: absolute;
+    left: 0; 
+    animation: fade-in 9s infinite;
+    animation-fill-mode: both;
+    animation-delay: 6s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    10%, 30% {
+        opacity: 1;
+    }
+    33% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+  }
