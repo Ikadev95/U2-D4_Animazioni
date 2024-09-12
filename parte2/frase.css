@@ -14,7 +14,7 @@ body {
 
 #testoAlternato{
     text-align: center;
-    background-color: antiquewhite;
+    border: 2px solid cornflowerblue;
     padding: 40px;
     margin: 10px;
 }
@@ -29,6 +29,9 @@ body {
     width:190px;
     display:inline-block;
 
+}
+i{
+    color:cornflowerblue;
 }
 .uno{
     animation: fade-in 9s infinite;
