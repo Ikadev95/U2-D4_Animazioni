@@ -18,7 +18,7 @@ body{
     transform: scale(0);
     transition-property: transform;
     transition-duration: 1s;
-    animation: start 500ms;
+    animation: start 300ms;
     animation-fill-mode: backwards;
 }
 .post-it:nth-child(1){
@@ -80,7 +80,7 @@ p{
 @keyframes start {
     from{
         opacity: 0;
-        transform: scale(10);
+        transform: scale(3);
     }
     to{
         transform: scale(1);
